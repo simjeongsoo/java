@@ -14,10 +14,49 @@
       - 런타임 예외에 해당하는 모든 예외들은 RuntimeException 을 확장한 예외 
       - ex) NullPointException 을 묶어 주지 않는다고해서 컴파일 할때 예외가 발생하지 않는다, 하지만 실행시에는 예외 발생 
       - 실행시에 예외가 발생하기 때문에 런타임 예외라고 함 
-      - 컴파일 시에 체크를 하지 않기 때문에 unchecked exception 이라고도 부름 
+      - 컴파일 시에 체크를 하지 않기 때문에 unchecked exception 이라고도 부름   
+
   - 예외 클래스 상관 관계도   
   ![Exception Relation](https://github.com/simjeongsoo/-GodOfJava/blob/587bff9145a4d292856a0a91a4aa0c5fd8c3e84c/Chapter14_exception/img/ExceptionRelation.png)   
-    - Exception 을 바로 확장한 클래스들의 Checked 예외이며, RuntimeException 밑에 확장 되어 있는 클래스들이 RuntimeException 들이다 
+    - Exception 을 바로 확장한 클래스들의 Checked 예외이며, RuntimeException 밑에 확장 되어 있는 클래스들이 RuntimeException 들이다.   
+------------------------------------------------------------
+### Throwable
+  - Exception 과 error 의 공통 부모 클래스는 Object 클래스와 java.lang.Throwable 클래스
+  - Exception 과 error 를 처리할 때 Throwable 로 처리해도 무관 
+    - Throwable 의 생성자 
+      - Throwable()
+      - Throwable(String message, Throwable cause)
+      - Throwable(Throwable cause)
+    - Throwable 클래스에 서넌 되어 있고, Exception 클래스에서 Overriding 한 메소드
+      - getMessage() : 예외 메시지 출력, 사용자에게 출력할때 유용 
+      - toString() : 자세한 예외 메시지 출력, 예외 클래스 이름도 같이 제공 
+      - printStackTrace() : 첫줄에 예외 메시지 출력, 두번쨰 줄부터는 예외가 발생하게 된 메소드들의 호출관계(스택 트레이스) 출력    
+        - printStackTrace() 는 개발시에만 사용, 운영 시스템에 사용하면 많은 양의 로그가 쌓임   
+------------------------------------------------------------
+### Throws , Throw
+  - 메소드를 선언할 때 매개 변수 소괄호 뒤에 throws 라는 예약어를 적어 준 뒤 예외를 선언하면, 해당 메소드에서 선언한 예외가 발생했을때 호출한 메소드로 예외가 전달, 만약 메소드에서 두 가지 이상의 예외를 던질 수 있다면 , implements 처럼 콤마로 구분하여 예외 클래스의 이름을 적어주면 됨  
+  - try 블록 내에서 예외를 발생시킬 경우에는 throw 라는 예약어를 적어 준 뒤 예외 객체를 생성하거나, 생성 되어 있는 객체를 명시해준다, throw한 예외 클래스가 catch 블록에 선언 되어 있지 않거나, throws 선언에 포함되어 있지 않으면 컴파일 에러 발생    
+  - catch 블럭에서 예외를 throw할 경우에도 메소드 선언의 throws 구문에 해당 예외가 정의되어 있어야만 한다.   
+------------------------------------------------------------
+### 자바 예외처리 전략 
+  - 예외가 항상 발생 하지 않고, 실행시에 발생할 확률이 매우 높은 경우에는 런타임 예외로 만드는것이 나음 
+    - 클래스 선언시 extends Exception 보다는 extends RuntimeException 으로 선언하면 throw 하는 메소드를 사용하더라도 호출한 메소드에서 try-catch 로 묶지 않아도 컴파일시에 예외 발생하지 않음 
+  - 이 경우에 구조적인 안전장치가 필요 
+    - try-catch 로 묶지 않은 메소드를 호출하는 메소드에서 예외를 처리하는 try-catch 가 되어있어야함
+```java
+public void methodCaller(){
+  try{
+    methodCallee();
+  }catch(Exception e){
+    // 예외처리
+  }
+}
+
+public void methodCallee(){
+  // RuntimeException 예외 발생 가능성 있는 부분 
+}
+```
+  
 
 ------------------------------------------------------------
 
