@@ -16,7 +16,7 @@
       - 실행시에 예외가 발생하기 때문에 런타임 예외라고 함 
       - 컴파일 시에 체크를 하지 않기 때문에 unchecked exception 이라고도 부름 
   - 예외 클래스 상관 관계도   
-  ![Exception Relation](./img/ExceptionRelation.png.jpg)  
+  ![Exception Relation](Chapter14_exception/img/ExceptionRelation.png)   
     - Exception 을 바로 확장한 클래스들의 Checked 예외이며, RuntimeException 밑에 확장 되어 있는 클래스들이 RuntimeException 들이다 
 
 ------------------------------------------------------------
