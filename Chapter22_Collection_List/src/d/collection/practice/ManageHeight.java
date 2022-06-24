@@ -10,8 +10,10 @@ public class ManageHeight {
         ManageHeight manageHeight = new ManageHeight();
         manageHeight.setData();
         for (int i = 1; i < 6; i++) {
-            manageHeight.printHeight(i); // 1~5 반까지 전체 학생 키 출력
+//            manageHeight.printHeight(i); // 1~5 반까지 전체 학생 키 출력
+            manageHeight.printAverage(i); // 각 반별 키의 평균 계산
         }
+
     }
 
     public void setData() {
@@ -48,6 +50,8 @@ public class ManageHeight {
             sum += list.get(classNo - 1).get(i);
         }
         avg = sum / list.get(classNo - 1).size();
-        System.out.println(avg);
+
+        System.out.println("Class No.:: "+classNo);
+        System.out.println("Height average : "+avg);
     }
 }
