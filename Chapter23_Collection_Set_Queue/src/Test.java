@@ -4,7 +4,7 @@ class SuperObj {
     }
     public void print() { // 3
         print(); // 3, 객체 s 가 넘어온 print()메소드 수행 이므로 자식클래스의 print() 메소드 수행
-        System.out.print("Super"); // 5 
+        System.out.print("Super"); // 5
     }
 }
 
