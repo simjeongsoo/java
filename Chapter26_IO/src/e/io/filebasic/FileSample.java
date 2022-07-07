@@ -1,7 +1,6 @@
-package e.io;
+package e.io.filebasic;
 
 import java.io.File;
-import java.nio.file.Paths;
 import java.util.Date;
 
 // 파일의 경로와 관련된 메소드들을 사용
