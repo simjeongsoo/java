@@ -1,0 +1,17 @@
+
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(è¤·°8œ½şÎ“1
+h
+java:S2184#"FCast one of the operands of this multiplication operation to a "long".(´Î”Úşÿÿÿÿ8½şÎ“1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ş­Şÿÿÿÿÿ8½şÎ“1
+K
+java:S2140")Use "java.util.Random.nextInt()" instead.(ËÙúÿÿÿÿ8­½şÎ“1
+€
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(‚¦¡ûûÿÿÿÿ8®½şÎ“1
+J	java:S108")Either remove or fill this block of code.(‚¦¡ûûÿÿÿÿ8®½şÎ“1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ğ‡Ş‚8®½şÎ“1
+b
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(¦¶Ó²8¯½şÎ“1
+{
+java:S2142$"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8¯½şÎ“1
+Z	java:S106%"9Replace this use of System.out or System.err by a logger.(±ª¢”ÿÿÿÿÿ8¯½şÎ“1
+T	java:S106)"9Replace this use of System.out or System.err by a logger.(ğÄÇJ8¯½şÎ“1

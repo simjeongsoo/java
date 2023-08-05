@@ -1,0 +1,15 @@
+
+b
+java:S2184"FCast one of the operands of this multiplication operation to a "long".(û„Ç8¡²è±‘1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ş­Şÿÿÿÿÿ8¢²è±‘1
+D
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ8ª²è±‘1
+€
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(‚¦¡ûûÿÿÿÿ8®²è±‘1
+J	java:S108")Either remove or fill this block of code.(‚¦¡ûûÿÿÿÿ8®²è±‘1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(´‹¹öşÿÿÿÿ8®²è±‘1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ÓÆº8¯²è±‘1
+€
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(‚¦¡ûûÿÿÿÿ8¯²è±‘1
+J	java:S108")Either remove or fill this block of code.(‚¦¡ûûÿÿÿÿ8¯²è±‘1
+U	java:S106&"9Replace this use of System.out or System.err by a logger.(éİœß8²“é±‘1

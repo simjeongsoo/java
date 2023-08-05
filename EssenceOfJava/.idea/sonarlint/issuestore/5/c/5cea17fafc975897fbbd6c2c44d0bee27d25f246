@@ -1,0 +1,11 @@
+
+h
+java:S1192"KDefine a constant instead of duplicating this literal "GreenApple" 3 times.(ìÄÿØ8şš‰‘1
+m
+java:S1192"KDefine a constant instead of duplicating this literal "GreenGrape" 3 times.(ÇÃ×¯ùÿÿÿÿ8óÈŠ‘1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(õ¨‡Õşÿÿÿÿ8üÛ„‘1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ìş˜»şÿÿÿÿ8Ò’‘1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(÷Ì£8Ò’‘1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8Ò’‘1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ìş˜»şÿÿÿÿ8À‘‘‘1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(÷Ì£8À‘‘‘1

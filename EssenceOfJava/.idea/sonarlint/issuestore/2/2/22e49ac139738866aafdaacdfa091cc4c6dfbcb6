@@ -1,0 +1,21 @@
+
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(µó”ûÿÿÿÿ8ÜÍ1
+T	java:S106"9Replace this use of System.out or System.err by a logger.(¢½8ãÍ1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(®ş”Ø8ãÍ1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(íóïòüÿÿÿÿ8ãÍ1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(˜Ú¶§8ãÍ1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(†ª’ø8ãÍ1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Ä×‘ùùÿÿÿÿ8äÍ1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Û¶›ÿ8äÍ1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Á†Àù8äÍ1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(€ç•Û8äÍ1
+s
+java:S2159"VRemove this call to "equals"; comparisons between unrelated types always return false.(€ç•Û8äÍ1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(íïüÿÿÿÿ8äÍ1
+x
+java:S2159"VRemove this call to "equals"; comparisons between unrelated types always return false.(íïüÿÿÿÿ8äÍ1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(æ¯‚Õ8åÍ1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(¹¬Ï8åÍ1
+Z	java:S106!"9Replace this use of System.out or System.err by a logger.(²Ş›™øÿÿÿÿ8åÍ1
+Z	java:S106$"9Replace this use of System.out or System.err by a logger.(î‰Âûÿÿÿÿ8åÍ1
+U	java:S106+"9Replace this use of System.out or System.err by a logger.(¬’ª°8Ş¶1

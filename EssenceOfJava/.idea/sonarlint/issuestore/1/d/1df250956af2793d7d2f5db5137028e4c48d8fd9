@@ -1,0 +1,16 @@
+
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ƒ¬ê8Ñ“¹®‘1
+i	java:S101#"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ö»úÀ8Ò“¹®‘1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ş­Şÿÿÿÿÿ8Ò“¹®‘1
+{
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8îêÌ°‘1
+E	java:S108")Either remove or fill this block of code.(ä ¹€8ïêÌ°‘1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ÒîË‹úÿÿÿÿ8ã“¹®‘1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(›óãäüÿÿÿÿ8å“¹®‘1
+B
+java:S2129" Remove this "String" constructor(›óãäüÿÿÿÿ8å“¹®‘1
+]	java:S125"<This block of commented-out lines of code should be removed.(¡³íòşÿÿÿÿ8š­Ğ°‘1
+U	java:S106'"9Replace this use of System.out or System.err by a logger.(ŠÎ¡‡8è“¹®‘1
+=
+java:S2129'" Remove this "String" constructor(ŠÎ¡‡8è“¹®‘1
+]	java:S125)"<This block of commented-out lines of code should be removed.(ßÚğ—şÿÿÿÿ8›­Ğ°‘1

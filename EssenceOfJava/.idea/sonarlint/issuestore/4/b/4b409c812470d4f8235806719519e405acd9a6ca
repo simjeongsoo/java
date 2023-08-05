@@ -1,0 +1,19 @@
+
+J
+java:S1604"(Make this anonymous inner class a lambda(Í‚ÅÌûÿÿÿÿ8—Ï°±‘1
+k
+java:S3014"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(ÑÑÄùúÿÿÿÿ8˜Ï°±‘1
+f
+java:S3014"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(óá´î8˜Ï°±‘1
+f
+java:S3014"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(‰ä¯8˜Ï°±‘1
+f
+java:S3014
+"IRemove this use of "ThreadGroup". Prefer the use of "ThreadPoolExecutor".(Ÿ² 8˜Ï°±‘1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ş­Şÿÿÿÿÿ8˜Ï°±‘1
+X	java:S125	"<This block of commented-out lines of code should be removed.(Ãìœ×8ŸÏ°±‘1
+{
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8 Ï°±‘1
+E	java:S108")Either remove or fill this block of code.(ä ¹€8¡Ï°±‘1
+X	java:S125"<This block of commented-out lines of code should be removed.(Ãìœ×8¡Ï°±‘1
+T	java:S106"9Replace this use of System.out or System.err by a logger.(çş–]8¢Ï°±‘1
