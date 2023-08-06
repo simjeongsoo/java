@@ -1,6 +1,6 @@
 package chapter14_lambda;
 
-@FunctionalInterface
+@FunctionalInterface // 함수형 인터페이스는 단 하나의 추상 메서드만 가져야 함
 interface MyFunction {
     void run(); // public abstract void run();
 }
@@ -11,8 +11,10 @@ public class LambdaEx1 {
     }
 
     static MyFunction getMyFunction() { // 반환 타입이 MyFunction인 메서드
-        MyFunction f = () -> System.out.println("f3.run()");
-        return f;
+//        MyFunction f = () -> System.out.println("f3.run()");
+//        return f;
+
+        return () -> System.out.println("f3.run()");
     }
 
     public static void main(String[] args) {
