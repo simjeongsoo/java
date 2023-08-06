@@ -1,7 +1,6 @@
 package chapter14_lambda;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -16,6 +15,9 @@ public class LamdaEx4 {
         list.removeIf(x -> x % 2 == 0 || x % 3 == 0); // 2의 배수이거나, 3의 배수이면 삭제
         System.out.println(list);
 
+        list.replaceAll(i -> i * 10);
+        System.out.println(list);
+
         Map<String, String> map = new HashMap<>();
         map.put("1", "1");
         map.put("2", "2");
@@ -24,9 +26,5 @@ public class LamdaEx4 {
 
         map.forEach((k, v) -> System.out.print("{" + k + "," + v + "}"));
         System.out.println();
-
-
-
-
     }
 }
