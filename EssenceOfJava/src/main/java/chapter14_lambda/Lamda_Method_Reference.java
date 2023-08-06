@@ -23,6 +23,12 @@ public class Lamda_Method_Reference {
         System.out.println(s.apply(20).iv);
 
         System.out.println(s.apply(100).iv);
+
+        // 배열 메서드 참조
+//        Function<Integer,int[]> f2 = (i) -> new int[i];
+        Function<Integer,int[]> f2 = int[]::new; // 메서드 참조
+        System.out.println(f2.apply(99).length);
+
     }
 }
 
