@@ -5,29 +5,29 @@ import java.util.stream.Stream;
 
 public class StreamEx1 {
     public static void main(String[] args) {
-        Stream<Student> studentStream = Stream.of(
-                new Student("name1", 3, 300),
-                new Student("name2", 1, 100),
-                new Student("name3", 2, 100),
-                new Student("name4", 2, 150),
-                new Student("name5", 1, 200),
-                new Student("name6", 3, 290),
-                new Student("name7", 3, 180)
+        Stream<StudentEx> studentStream = Stream.of(
+                new StudentEx("name1", 3, 300),
+                new StudentEx("name2", 1, 100),
+                new StudentEx("name3", 2, 100),
+                new StudentEx("name4", 2, 150),
+                new StudentEx("name5", 1, 200),
+                new StudentEx("name6", 3, 290),
+                new StudentEx("name7", 3, 180)
         );
 
-        studentStream.sorted(Comparator.comparing(Student::getBan).thenComparing(Comparator.naturalOrder()))
+        studentStream.sorted(Comparator.comparing(StudentEx::getBan).thenComparing(Comparator.naturalOrder()))
                 .forEach(System.out::println);
 
     }
 }
 
-class Student implements Comparable<Student> {
+class StudentEx implements Comparable<StudentEx> {
 
     String name;
     int ban;
     int totalScore;
 
-    public Student(String name, int ban, int totalScore) {
+    public StudentEx(String name, int ban, int totalScore) {
         this.name = name;
         this.ban = ban;
         this.totalScore = totalScore;
@@ -51,7 +51,7 @@ class Student implements Comparable<Student> {
 
     // 총점 내림차순을 기본 정렬로 한다.
     @Override
-    public int compareTo(Student s) {
+    public int compareTo(StudentEx s) {
         return s.totalScore - this.totalScore;
     }
 }
