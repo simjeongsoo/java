@@ -18,12 +18,22 @@ public class Stack {
         elements[size++] = e;
     }
 
+//    public Object pop() {
+//        if (size == 0) {
+//            throw new EmptyStackException();
+//        }
+//        return elements[--size];
+//    }
+
     public Object pop() {
         if (size == 0) {
             throw new EmptyStackException();
         }
-        return elements[--size];
+        Object result = elements[size--]; // Object 객체에 담아 return
+        elements[size] = null; // 참조 해제
+        return result;
     }
+
 
     /**
      * 원로를 위한 공간을 적어도 하나 이상 확보한다.
