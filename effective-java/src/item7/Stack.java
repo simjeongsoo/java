@@ -1,10 +1,9 @@
+package item7;
+
 import java.util.Arrays;
 import java.util.EmptyStackException;
 
-// 메모리 누수가 일어나는 위치는 어디인가?
-//==간단한 스택 코드==//
 public class Stack {
-
     private Object[] elements;
     private int size = 0;
     private static final int DEFAULT_INITIAL_CAPACITY = 16;
