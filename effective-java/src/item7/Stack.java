@@ -27,7 +27,7 @@ public class Stack {
      * <h3>메모리 누수가 일어나는 pop()</h3>
      * 이 코드에서는 스택이 커졌다 줄어들었을 때 스택에서 꺼내진 객체들을 gc가 더이상 회수하지 않는다. <br>
      * 이 스택은 다 쓴 참조(obsolete reference)를 여전히 가지고 있기 때문이다. <br>
-     * <p>&nbsp;-> elements 배열 의 활성 영역 : index > size <br>
+     * <p>&nbsp;-> elements 배열 의 활성 영역 : index < size <br>
      * <p>&nbsp;-> 다 쓴 참조(obsolete reference) : elements 배열의 활성 영역 밖의 참조들 <br>
      */
     public Object memoryLeakPop() {
