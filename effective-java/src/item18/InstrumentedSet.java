@@ -7,7 +7,7 @@ import java.util.*;
  * Set 인터페이스를 구현한 다른 클래스를 포함하고 있으며, 기존 Set의 기능을 유지하면서 추가적인 동작을 수행 - 래퍼클래스
  * @param <E>
  */
-public class InstrumentedSet<E> extends ForwardingSet<E> {
+public class InstrumentedSet<E> extends ForwardingSet<E> { // concrete decorator : InstrumentedSet
     private int addCount = 0;
 
     public InstrumentedSet(Set<E> s) {
@@ -30,7 +30,7 @@ public class InstrumentedSet<E> extends ForwardingSet<E> {
 
     public static void main(String[] args) {
         // HashSet을 생성하고 InstrumentedSet으로 래핑합니다.
-        Set<String> originalSet = new HashSet<>();
+        Set<String> originalSet = new HashSet<>(); // concrete 컴포넌트
         InstrumentedSet<String> instrumentedSet = new InstrumentedSet<>(originalSet);
 //
 //        // 요소를 추가하면서 addCount 값이 증가합니다.

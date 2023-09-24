@@ -9,7 +9,8 @@ import java.util.Set;
  * 임의의 Set에 계측 기능을 덧씌워 새로운 Set으로 만드는 것이 핵심!
  * @param <E>
  */
-public class ForwardingSet<E> implements Set<E> {
+public class ForwardingSet<E> implements Set<E> { // Set<E>인터페이스 : 컴포넌트
+                                                  // ForwardingSet : 데코레이터
 
     // 새로운 클래스를 만들고 private 필드로 기존 클래스의 인스턴스를 참조하게 하자.
     private final Set<E> s;
