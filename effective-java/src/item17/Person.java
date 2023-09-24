@@ -9,8 +9,15 @@ public final class Person {
     }
 
     // 내부의 가변적인 컴포넌트에 접근하는 방법을 제공하면 안된다.
+//    public Address getAddress() {
+//        return address;
+//    }
+
+    // 방어적 복사 수행
     public Address getAddress() {
-        return address;
+        Address copyOfAddress = new Address();
+        copyOfAddress.setCity(address.city);
+        return copyOfAddress;
     }
 
     public static void main(String[] args) {
@@ -22,6 +29,10 @@ public final class Person {
 
         // Person의 상태가 처음과 달라졌다.
         ansan.setCity("Ansan");
+
+        // 방어적 복사를 수행함으로써 person은 불변클래스가 되었다.
+        // result : Seoul
+        System.out.println(person.address.getCity());
 
     }
 }
