@@ -4,6 +4,8 @@ public final class Time {
     private static final int HOURS_PER_DAY = 24;
     private static final int MINUTES_PER_HOUR = 60;
 
+    // 이렇게 사용되는 필드는 많지 않다.
+    // 불변필드로 노출 되었더라도 단점이 그나마 줄어드는 것이지 문제가 생긴다.
     public final int hour;
     public final int minute;
 
