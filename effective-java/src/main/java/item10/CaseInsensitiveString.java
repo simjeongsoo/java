@@ -12,18 +12,19 @@ public class CaseInsensitiveString {
     }
 
 //    대칭성 위배
-    @Override
-    public boolean equals(Object obj) {
-        if (obj instanceof CaseInsensitiveString) {
-            return s.equalsIgnoreCase(
-                    ((CaseInsensitiveString) obj).s
-            );
-        }
-        if (obj instanceof String) { // 한 방향으로만 작동한다.
-            return s.equalsIgnoreCase((String) obj);
-        }
-        return false;
-    }
+//    @Override
+//    public boolean equals(Object obj) {
+//        if (obj instanceof CaseInsensitiveString) {
+//            return s.equalsIgnoreCase(
+//                    ((CaseInsensitiveString) obj).s
+//            );
+//        }
+//        // 다른 타입의 equals를 지원
+//        if (obj instanceof String) { // 한 방향으로만 작동한다.
+//            return s.equalsIgnoreCase((String) obj);
+//        }
+//        return false;
+//    }
 
 //    문제 사연 (p.55)
     public static void main(String[] args) {
@@ -37,5 +38,13 @@ public class CaseInsensitiveString {
         List<CaseInsensitiveString> list = new ArrayList<>();
         list.add(cis); // list의 equals 사용
         System.out.println(list.contains(polish)); // false
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        // 대칭성을 유지하려면 다른타입을 지원하지 말아야 한다.
+        return obj instanceof
+                CaseInsensitiveString &&
+                ((CaseInsensitiveString) obj).s.equalsIgnoreCase(s);
     }
 }
