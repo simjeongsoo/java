@@ -18,11 +18,15 @@ public class CounterPointTest {
     public static void main(String[] args) {
         Point p1 = new Point(1, 0);
         Point p2 = new CounterPoint(1, 0);
-
         // true
-        System.out.println(onUnitCircle(p1));
-
+//        System.out.println(onUnitCircle(p1));
         // true를 출력해야 하지만, Point의 equals가 getClass를 사용해 작성되었다면 그렇지 않다.
-        System.out.println(onUnitCircle(p2));
+//        System.out.println(onUnitCircle(p2));
+
+        Point p3 = new ColorPoint(1, 0, Color.RED);
+        Point p4 = new DelegationPoint(1, 0, Color.RED).asPoint();
+
+        System.out.println(onUnitCircle(p1));
+        System.out.println(onUnitCircle(p4));
     }
 }
