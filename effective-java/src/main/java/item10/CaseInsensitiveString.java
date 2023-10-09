@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * equals의 대칭성
+ *  A.equals(B) == B.equals(A)
+ */
 public class CaseInsensitiveString {
     private final String s;
 
