@@ -1,15 +1,15 @@
-package item28;
+package item28.object;
 
 import java.util.Arrays;
 import java.util.EmptyStackException;
 import java.util.List;
 
-public class ObjectStack {
+public class Stack {
     private Object[] elements;
     private int size = 0;
     private static final int INITIAL_CAPACITY = 16;
 
-    public ObjectStack() {
+    public Stack() {
         elements = new Object[INITIAL_CAPACITY];
     }
 
@@ -36,7 +36,7 @@ public class ObjectStack {
     }
 
     public static void main(String[] args) {
-        ObjectStack stack = new ObjectStack();
+        Stack stack = new Stack();
         for (String item : List.of("a", "b", "c")) {
             stack.push(item);
         }
